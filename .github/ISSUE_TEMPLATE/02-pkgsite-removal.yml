@@ -12,8 +12,7 @@ body:
       label: "What is the path of the package that you would like to have removed?"
       description: |
         We can remove packages with a shared path prefix.
-        For example, a request for 'github.com/author' would remove all pkg.go.dev pages
-        with that package path prefix.
+        For example, a request for 'github.com/author' would remove all pkg.go.dev pages with that package path prefix.
     validations:
       required: true
   - type: textarea
@@ -22,8 +21,7 @@ body:
       label: "Are you the owner of this package?"
       description: |
         Only the package owners can request to have their packages removed from pkg.go.dev.
-        If the package path doesn't include your github username,
-        please provide some other form of proof of ownership.
+        If the package path doesn't include your github username, please provide some other form of proof of ownership.
     validations:
       required: true
   - type: textarea
@@ -37,8 +35,7 @@ body:
 
         If you have deleted your repo, please recreate it and publish a retraction.
 
-        Retracting a module version involves adding a retract directive to your go.mod file
-        and publishing a new version.
+        Retracting a module version involves adding a retract directive to your go.mod file and publishing a new version.
         For example: https://github.com/jba/retract-demo/blob/main/go.mod#L5-L8.
         See https://pkg.go.dev/about#removing-a-package for additional tips on retractions.
     validations:
